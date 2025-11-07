@@ -1,24 +1,33 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
 
-node_modules
-dist
-dist-ssr
-*.local
+    <script type="module" src="/@vite/client"></script>
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Landing Page</title>
+    <meta name="description" content="Buildify landing page template" />
+    <meta name="author" content="Your Company" />
+
+    <meta property="og:title" content="Buildify Template Landing Page" />
+    <meta
+      property="og:description"
+      content="Buildify landing page template"
+    />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@your_handle" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/buildify.js"></script>
+    <script type="module" src="/src/main.tsx?t=1762462152609"></script>
+  </body>
+</html>

@@ -1,27 +1,30 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
 
-const queryClient = new QueryClient();
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import SystemOverview from './pages/SystemOverview';
+import BackendApps from './pages/BackendApps';
+import UserFlow from './pages/UserFlow';
+import AIPipeline from './pages/AIPipeline';
+import Deployment from './pages/Deployment';
+import APIReference from './pages/APIReference';
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="system-overview" element={<SystemOverview />} />
+          <Route path="backend-apps" element={<BackendApps />} />
+          <Route path="user-flow" element={<UserFlow />} />
+          <Route path="ai-pipeline" element={<AIPipeline />} />
+          <Route path="deployment" element={<Deployment />} />
+          <Route path="api-reference" element={<APIReference />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
