@@ -8,6 +8,7 @@ import UserFlow from './pages/UserFlow';
 import AIPipeline from './pages/AIPipeline';
 import Deployment from './pages/Deployment';
 import APIReference from './pages/APIReference';
+import DatabaseDesign from './pages/DatabaseDesign';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="ai-pipeline" element={<AIPipeline />} />
           <Route path="deployment" element={<Deployment />} />
           <Route path="api-reference" element={<APIReference />} />
+          <Route path="database-design" element={<DatabaseDesign />} />
         </Route>
       </Routes>
     </Router>

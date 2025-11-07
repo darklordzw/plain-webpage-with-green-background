@@ -21,8 +21,7 @@
    - Color-coded component categories
 
 3. **Dark Mode High-Tech Theme**
-   - Dark background with tech-inspired gradients
-   - Neon accent colors (blue, purple, green)
+   - Dark background (#1a1f2e), Primary blue (#4A9EFF), Secondary green (#4ADE80), Accent purple (#A78BFA)
    - Glow effects on interactive elements
    - Code syntax highlighting
    - Responsive design
@@ -118,9 +117,11 @@
 - ✅ Language indicator badge
 - ✅ Dark theme styling
 
-### Task 9: Database Design Page [PLANNED]
-**Files**: `src/pages/DatabaseDesign.tsx` (to be created)
-- ⬜ Create a page to document the database schema.
+### Task 9: Database Design Page [IN PROGRESS]
+**Files**: `src/pages/DatabaseDesign.tsx`
+- ✅ Create the `DatabaseDesign.tsx` file.
+- ✅ Add a basic structure to the `DatabaseDesign.tsx` component.
+- ✅ Update the `src/App.tsx` file to include a route for the new page.
 - ⬜ Include ER diagrams using Mermaid.js.
 - ⬜ Detail key tables, relationships, and indexing strategies.
 - ⬜ Explain data models and their purpose.
