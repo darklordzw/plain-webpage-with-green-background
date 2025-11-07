@@ -11,6 +11,7 @@
    - AI Code Generation Pipeline explanation
    - Deployment Infrastructure & CI/CD
    - API Reference with endpoints
+   - Database Design page (Future)
 
 2. **Architecture Diagrams**
    - Interactive Mermaid.js flowcharts
@@ -56,6 +57,7 @@
 5. **AI Pipeline** - Code generation workflow, model selection, streaming
 6. **Deployment** - CI/CD pipeline, Heroku/Fly.io setup, infrastructure
 7. **API Reference** - Endpoint documentation, request/response examples
+8. **Database Design** - (Future) Schema diagrams, table relationships, indexing strategies
 
 ## Tasks
 
@@ -115,6 +117,13 @@
 - ✅ Copy to clipboard functionality
 - ✅ Language indicator badge
 - ✅ Dark theme styling
+
+### Task 9: Database Design Page [PLANNED]
+**Files**: `src/pages/DatabaseDesign.tsx` (to be created)
+- ⬜ Create a page to document the database schema.
+- ⬜ Include ER diagrams using Mermaid.js.
+- ⬜ Detail key tables, relationships, and indexing strategies.
+- ⬜ Explain data models and their purpose.
 
 ## Discussions
 
